@@ -63,6 +63,18 @@ body{
   align-items:center;
   gap:0.8rem;
 }
+
+.brand img {
+  width: 100%; /* membuat bisa melebar sesuai container */
+  max-width: 170px; /* maksimal ukuran tetap 170px */
+  height: auto; /* agar tinggi mengikuti lebar proporsional */
+  object-fit: contain;
+  background: var(--white);
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/*
 .brand img{
   width:170px;
   height:170px;
@@ -70,7 +82,7 @@ body{
   background:var(--white);
   padding:6px;
   border-radius:8px;
-}
+}*/
 .brand-text h1{
   margin:0;
   font-size:1.25rem;
@@ -128,6 +140,13 @@ body{
   .nav-list.open{display:flex;padding:0.6rem 0}
   .menu-item{flex-direction:row}
   .brand img{width:56px;height:56px}
+  .brand img {
+    max-width: 100px; /* ukuran maksimal logo diperkecil pada layar kecil */
+  }
+  .brand-text h1 {
+    font-size: 1rem; /* ukuran teks juga diperkecil */
+  }
+
 }
 
 
